@@ -1,0 +1,12 @@
+{
+  "mode": "tensor_parallel_2",
+  "num_gpus": 2,
+  "tensor_parallel_size": 2,
+  "num_prompts": 100,
+  "max_tokens": 256,
+  "total_time": 74.67622303962708,
+  "throughput": 1.3391143248760027,
+  "tokens_per_second": 339.3583522100766,
+  "avg_latency": 0.7467608332633973,
+  "load_time": 63.298269510269165
+}
