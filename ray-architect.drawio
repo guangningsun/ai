@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+  <diagram name="第1页" id="BgOXajgbMqOjtJClV2pF">
+    <mxGraphModel dx="976" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" value="Ray 分布式计算架构" vertex="1">
+          <mxGeometry height="30" width="210" x="320" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#dae8fc;fontSize=14;rounded=1;shadow=1" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;Ray AI Runtime (AIR)&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="190" x="330" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-3" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#fff2cc;fontSize=14;rounded=1;shadow=1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Ray Core (动态任务图 &amp; 分布式调度)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="230" x="310" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-4" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f5f5f5;fontSize=14;rounded=1;shadow=1" value="&lt;b&gt;系统层 (System Layer)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="350" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-5" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;shadow=1" value="Global Control Store (GCS)" vertex="1">
+          <mxGeometry height="70" width="120" x="260" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;shadow=1" value="分布式调度器" vertex="1">
+          <mxGeometry height="60" width="110" x="400" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-7" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;shadow=1" value="对象存储 (内存存储)" vertex="1">
+          <mxGeometry height="70" width="120" x="480" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=20;horizontal=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;fontSize=12;" value="节点1 (Worker Node)" vertex="1">
+          <mxGeometry height="130" width="170" x="150" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-9" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fad7ac;strokeColor=#b46504;shadow=1;fontSize=11;" value="Worker进程" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-10" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fad7ac;strokeColor=#b46504;shadow=1;fontSize=11;" value="Worker进程" vertex="1">
+          <mxGeometry height="30" width="60" x="240" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-11" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;fontSize=11;" value="对象存储&#xa;(共享内存)" vertex="1">
+          <mxGeometry height="40" width="130" x="170" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-12" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=20;horizontal=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;fontSize=12;" value="节点2 (Worker Node)" vertex="1">
+          <mxGeometry height="130" width="170" x="430" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-13" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fad7ac;strokeColor=#b46504;shadow=1;fontSize=11;" value="Worker进程" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-14" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fad7ac;strokeColor=#b46504;shadow=1;fontSize=11;" value="Worker进程" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;fontSize=11;" value="对象存储&#xa;(共享内存)" vertex="1">
+          <mxGeometry height="40" width="130" x="450" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-16" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=20;horizontal=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;fontSize=12;" value="节点3 (Head Node)" vertex="1">
+          <mxGeometry height="150" width="170" x="640" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-17" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;fontSize=11;" value="驱动 (Driver)" vertex="1">
+          <mxGeometry height="30" width="60" x="660" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-18" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fad7ac;strokeColor=#b46504;shadow=1;fontSize=11;" value="Worker进程" vertex="1">
+          <mxGeometry height="30" width="60" x="730" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-19" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;fontSize=11;" value="对象存储&#xa;(共享内存)" vertex="1">
+          <mxGeometry height="40" width="130" x="660" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-20" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;fontSize=12;fontStyle=1" value="Ray Client" vertex="1">
+          <mxGeometry height="40" width="100" x="660" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-21" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#3333FF;dashed=1;" value="任务提交/获取结果" vertex="1">
+          <mxGeometry height="30" width="110" x="680" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-22" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#3333FF;" target="ddTfNCDwCGes5IfJDv9A-6" value="GCS 交互">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-23" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-6" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#3333FF;" target="ddTfNCDwCGes5IfJDv9A-12" value="调度信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-24" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-7" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#3333FF;" target="ddTfNCDwCGes5IfJDv9A-15" value="对象引用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-25" connectable="0" parent="ddTfNCDwCGes5IfJDv9A-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="分布式对象存储" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-26" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#999999;dashed=1;" target="ddTfNCDwCGes5IfJDv9A-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-27" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#666666;" value="节点间通信 (gRPC)" vertex="1">
+          <mxGeometry height="20" width="120" x="310" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-28" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#999999;dashed=1;" target="ddTfNCDwCGes5IfJDv9A-13" value="任务依赖 &amp; 数据流">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-29" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=11;" value="任务" vertex="1">
+          <mxGeometry height="30" width="50" x="280" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-30" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;fontSize=11;" value="Actor" vertex="1">
+          <mxGeometry height="30" width="50" x="390" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-31" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;dashed=1;" target="ddTfNCDwCGes5IfJDv9A-6" value="任务提交">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-32" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;dashed=1;" target="ddTfNCDwCGes5IfJDv9A-3" value="API调用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddTfNCDwCGes5IfJDv9A-33" edge="1" parent="1" source="ddTfNCDwCGes5IfJDv9A-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;dashed=1;" target="ddTfNCDwCGes5IfJDv9A-5" value="底层依赖">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
